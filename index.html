@@ -6,18 +6,22 @@
     <script src="https://cdn.jsdelivr.net/npm/p5@latest/lib/p5.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@latest/lib/addons/p5.dom.min.js"></script>
     <script src="https://unpkg.com/ml5@1/dist/ml5.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>ProyectO Final</title>
 </head>
 <body>
     <header>
         <h1>Proyecto Final</h1>
      </header>
-            <h2>
-                Para mi proyecto final, se va a realizar un juego donde el 
-                usuario podra dibujar en pantalla usando las manos rastreadas por la cámara. Debebar pasar cada nivel del juego para avanzar
-                Se le presentará un dibujo aleatorio en cada nivel, y su tarea será replicarlo lo más parecido posible. 
-                Usaremos un modelo de manos entrenado con ml5.js en Teachable Machine para rastrear movimientos.
-            </h2>
+            <div id="startScreen">
+                <p>Instrucciones:<br><br>1. Usa la mano izquierda para cambiar el tamaño del pincel.<br>2. Usa la mano derecha para dibujar.<br>3. Pasa la mano derecha sobre un color para cambiar el color de trazo.
+                  <br>4. Haz clic en 'Borrar Todo' para limpiar el lienzo.<br>5. Ponte en un lugar con buena iluminación</p>
+              </div>
+
+            <div id="buttonContainer">
+                <button class="button-24" id="clearButton">Borrar Todo</button>
+              </div>
+
         <script src="sketch.js"></script>
 
 </body>
