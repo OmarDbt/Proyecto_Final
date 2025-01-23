@@ -6,8 +6,8 @@ let px = 0;
 let py = 0;
 let sw = 8;
 let currentColor;
-let colors;
-let showStartScreen = true;  // Muestra o no la pantalla de inicio
+let colors; //Paleta
+let showStartScreen = true;  // Pantalla de inicio
 
 function preload() {
   // Carga el modelo de detección de manos de ml5.js
@@ -59,7 +59,7 @@ function draw() {
     for (let i = 0; i < colors.length; i++) {
       fill(colors[i]);
       noStroke();
-      circle(30, 50 + i * 60, 40);  // Círculos para los colores de la paleta
+      circle(30, 50 + i * 60, 50);  // Círculos para los colores de la paleta
     }
 
     if (hands.length > 0) {  // Si hay manos detectadas
